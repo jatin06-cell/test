@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP's News</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container">
+            <a href="#" onclick="reload()" class="logo">
+                <img src="news logo.png" alt="Logo">
+            </a>
+            <div class="nav-link">
+                <ul class="links">
+                    <li class="hover-link nav-item" id ="sports" onclick = "onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id = "finance" onclick = "onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id = "politics" onclick = "onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id = "tech" onclick = "onNavItemClick('tech')">Technology</li>
+                </ul>
+             </div>
+             <div class="sec-bar">
+                <input type="text" class="news-input" id="sec-text" placeholder="e.g. Science">
+                <button class="sec-button" id="sec-button">Search</button>
+             </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="news-cont container" id="news-container">
+        
+        </div>
+        
+    </main>
+
+    <template id="template-news">
+            <div class="news">
+                <div class="news-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="news-content">
+                    <h3 id="news-title">This is a News</h3>
+                    <h6 class="news-source" id="news-source">Gadget 30/7/24</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, necessitatibus officiis asperiores facilis eveniet et accusantium, illum ipsum reprehenderit deserunt impedit. Necessitatibus, voluptate vel. Soluta esse quos a? Cupiditate, ex!</p>
+                </div>
+            </div>
+    </template>
+
+
+       <script src="first.js"></script>    
+</body>
+</html>
